@@ -1,0 +1,4 @@
+[todo]
+part1=localhost,1723|localhost,1725
+part3=localhost,1725|localhost,1724
+part2=localhost,1724|localhost,1723

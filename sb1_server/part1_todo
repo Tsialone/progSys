@@ -1,0 +1,7 @@
+*Liste_fichier algo
+    Quoi:On demande de lister les fichiers dont leurs partitions est complet  dans les subServer
+    donnee:
+        -serveur disponible avec BroadCast
+        -historique de replication
+    Comment:
+        

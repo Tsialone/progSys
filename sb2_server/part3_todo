@@ -1,0 +1,8 @@
+er les fichiers depuis le Masterserveur
+    donnee:
+        -liste des fichiers algo
+        -MasterServer
+        -Client
+    Comment:
+        -Demande liste au masterServer
+            -MasterServer envoie la liste au client
