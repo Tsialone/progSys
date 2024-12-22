@@ -77,19 +77,16 @@ public class Reader {
                     templigne = templigne.replace("]", "");
                     if (templigne.equals(filename)) {
                         supprimerBloc = true;
-                        continue; // Ignorer cette ligne
+                        continue; 
                     } else {
-                        // Nouvelle section, fin du bloc à supprimer
                         supprimerBloc = false;
                     }
                 }
     
                 if (supprimerBloc) {
-                    // Ignorer les lignes du bloc à supprimer
                     continue;
                 }
     
-                // Ajouter les lignes non supprimées à la liste
                 lignesModifiees.add(ligne);
             }
         } catch (IOException e) {
@@ -97,7 +94,6 @@ public class Reader {
             return;
         }
     
-        // Réécrire le fichier avec les lignes modifiées
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(cheminFichier))) {
             for (String ligne : lignesModifiees) {
                 writer.write(ligne);
@@ -124,7 +120,7 @@ public class Reader {
                     }
                     if (str[j].split("=").length == 2) {
                         String val1 = str[j].split("=")[0];
-                        String val2 = str[j].split("=")[1];
+                        String val2 = str[j].split("=")[1].trim();
                         // System.out.println( "val1 " +val1 + " val2 "+ val2);
                         if (val1.equals("localport")) {
                             Map.put(val1, Integer.parseInt(val2));
