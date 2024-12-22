@@ -1,0 +1,19 @@
+*Liste_fichier algo
+    Quoi:On demande de lister les fichiers dont leurs partitions est complet  dans les subServer
+    donnee:
+        -serveur disponible avec BroadCast
+        -historique de replication
+    Comment:
+        -Alaina ny historique de replication
+            -alaina daholo ny fichier izay complet ny partion'ny rehetra
+                -mahazo List<String> izay alefa any @client avy eo 
+
+*Liste_fichier Socket
+    Quoi:On demande de lister les fichiers depuis le Masterserveur
+    donnee:
+        -liste des fichiers algo
+        -MasterServer
+        -Client
+    Comment:
+        -Demande liste au masterServer
+            -MasterServer envoie la liste au client
